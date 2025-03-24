@@ -2,12 +2,12 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-      "name": "Install FastAPI",
-      "command": "pip install fastapi \"uvicorn[standard]\""
+      "command": "pip install fastapi \"uvicorn[standard]\"",
+      "name": "Install FastAPI"
     },
     {
-      "name": "Install Dependencies",
-      "command": "pip install -r requirements.txt"
+      "command": "pip install -r requirements.txt",
+      "name": "Install Dependencies"
     }
   ],
 
@@ -25,8 +25,11 @@
       "name": "Install Dependencies",
       "command": "pip install -r requirements.txt",
       "restartOn": {
-        "files": ["requirements.txt"],
+        "files": [
+          "requirements.txt"
+        ],
         "branch": false,
+        "clone": false,
         "resume": false
       }
     }
