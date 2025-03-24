@@ -1,1 +1,7 @@
 PyYaml==6.0
+# List of dependencies required for the FastAPI application
+fastapi
+pydantic
+pymongo
+uvicorn
+bson
